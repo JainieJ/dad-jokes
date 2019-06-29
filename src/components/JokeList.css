@@ -1,0 +1,137 @@
+.JokeList {
+  display: flex;
+  width: 80%;
+  height: 80%;
+}
+
+.JokeList-sidebar {
+  background-color: #fad8d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 35%;
+  box-shadow: 0px 6px 5px -1px rgba(0, 0, 0, 0.63);
+  z-index: 1;
+}
+
+.JokeList-title {
+  font-size: 4rem;
+  color: #2e282a;
+  font-weight: 300;
+  letter-spacing: 0.6rem;
+}
+
+.JokeList-title span {
+  font-weight: 700;
+}
+
+.Jokelist-emoji {
+  background: rgba(23, 190, 187, 1);
+  border-radius: 50%;
+  margin: 0.5rem;
+  box-shadow: 0px 6px 5px -1px rgba(0, 0, 0, 0.63);
+}
+.Jokelist-emoji:hover,
+.Jokelist-emoji:focus {
+  animation-name: spaceboots;
+  animation-duration: 0.8s;
+  transform-origin: 50% 50%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.Jokelist-jokes {
+  height: 90%;
+  min-width: 65%;
+  background: #bfc0c0;
+  align-self: center;
+  overflow-y: scroll;
+  box-shadow: 0px 6px 5px -1px rgba(0, 0, 0, 0.63);
+}
+.JokeList-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  color: #b81365;
+  text-align: center;
+}
+.Jokelist-spinning-icon {
+  font-size: 5rem;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.JokeList-getmore {
+  font-size: 1.5rem;
+  width: 50%;
+  border-radius: 2rem;
+  /* padding: 1rem 2rem; */
+  background: linear-gradient(
+    135deg,
+    rgba(187, 160, 202, 1),
+    rgba(249, 218, 208, 1)
+  );
+  outline: none;
+  border: none;
+  font-weight: 700;
+  margin-top: 2rem;
+  box-shadow: 0px 6px 5px -1px rgba(0, 0, 0, 0.63);
+  cursor: pointer;
+  transition: 0.8s ease;
+}
+
+.JokeList-getmore:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.63);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spaceboots {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
