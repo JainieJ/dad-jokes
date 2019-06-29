@@ -21,6 +21,7 @@
   color: #2e282a;
   font-weight: 300;
   letter-spacing: 0.6rem;
+  margin: 0 1rem;
 }
 
 .JokeList-title span {
@@ -71,7 +72,7 @@
   font-size: 1.5rem;
   width: 50%;
   border-radius: 2rem;
-  /* padding: 1rem 2rem; */
+  padding: 1rem 2rem;
   background: linear-gradient(
     135deg,
     rgba(187, 160, 202, 1),
